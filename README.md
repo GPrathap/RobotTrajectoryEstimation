@@ -18,7 +18,7 @@ first order system. To predict the trajectory velocity and position of
 the robot are considered.
 
 #### Problem Formulation
-#####Design State Transition Function and Measurment Function
+##### Design State Transition Function and Measurment Function
 System has position and constant velocity, so the state variable needs both of these. The matrix
 formulation could be
 
@@ -38,7 +38,7 @@ and then use both sensors reading and do the sensor fusion to measure the robot 
 y direction separately. 
 
 
-#####Design Process Noise and Measurement Noise
+##### Design Process Noise and Measurement Noise
 Since sensors are not perfect, some errors can be occurred during its measurement. Same goes for
 processing the model as well. Because of some internal and external effects on configuration space.
 In here[1], discrete time Wiener process is used to define the noise of the process. Thus, throughout
@@ -48,7 +48,7 @@ To measure the noise of the sensors (R) there is no standard methods. What I hav
 is, assume such that there is no correlation between two sensors and variance of each sensor is
 measured by using collected sensor data. If the model is incorporate with two sensors.
 
-#####Initial Conditions
+##### Initial Conditions
 Set the initial position at (0) with a velocity of (0). Covariance matrix P sets to a large value like
 100.
 Let’s consider when two sensors are being used,
@@ -64,10 +64,9 @@ velocity is set to 20m/s of Lego robot.
 Please read **TrajectoryEstimation.pdf** for details explanation. 
 
 
-####Result Visualization 
+#### Result Visualization 
 1. See the result with two sensors, 
-there is function called **plot_sensor_fusion_result()** 
-just uncomment and run the required file. 
+there is function called **plot_sensor_fusion_result()**, just uncomment and run the required file. 
 2. See the result of individual sensor for a given filer, 
 change the **sensor_number** into 1 or 2. Then run the required file. 
 
