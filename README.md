@@ -1,23 +1,23 @@
 # Robot Trajectory Prediction
 
-####Note
+#### Note
 If basic information is required for Kalman filter, Extended Kalman
 filter, Unscented Kalman filter and Particle filter, please go 
 through this([Kalman-and-Bayesian-Filters-in-Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python) 
 which I followed in order to understand the basic concepts and 
 help a lot to implement this task. 
 
-####Installing prerequisites
+#### Installing prerequisites
 Required libraries are listed in **requirement.txt**. Please install those libraries before using this.
 
-####Problem Statement
+#### Problem Statement
 Robot trajectory needs to predicted with the help of sensor fusion.
 To do this there are few assumptions to be made. Lego robot motion 
 model is constant velocity based model. So this model can model as a 
 first order system. To predict the trajectory velocity and position of
 the robot are considered.
 
-####Problem Formulation
+#### Problem Formulation
 #####Design State Transition Function and Measurment Function
 System has position and constant velocity, so the state variable needs both of these. The matrix
 formulation could be
