@@ -66,8 +66,9 @@ Please read **TrajectoryEstimation.pdf** for details explanation.
 
 #### Result Visualization 
 1. See the result with two sensors, 
-there is function called **plot_sensor_fusion_result()**, just uncomment and run the required file. 
+there is function called **plot_sensor_fusion_result()**, just uncomment and run the required file ([FilerName]FilterWithTwoSensor.py).
 2. See the result of individual sensor for a given filer, 
-change the **sensor_number** into 1 or 2. Then run the required file. 
+change the **sensor_number** into 1 or 2. Then run the required file ([FilerName]FilterWithOneSensor.py). 
+3. See the comparison among the filters, run the **FilterComparison.py**
 
 
