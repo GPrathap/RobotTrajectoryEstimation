@@ -1,0 +1,18 @@
+
+import matplotlib.pyplot as plt
+
+import ExtendedKalmanFilterWithTwoSensor
+import KalmanFilterWithTwoSensor
+import ParticelFilterWithTwoSensor
+import UnscentedKalmanFilterWithTwoSensor
+
+with_partical_filter=False
+
+KalmanFilterWithTwoSensor.plot_sensor_fusion_predicted_result()
+ExtendedKalmanFilterWithTwoSensor.plot_sensor_fusion_predicted_result()
+UnscentedKalmanFilterWithTwoSensor.plot_sensor_fusion_predicted_result()
+
+if(with_partical_filter):
+    ParticelFilterWithTwoSensor.plot_sensor_fusion_predicted_result()
+
+plt.show()
