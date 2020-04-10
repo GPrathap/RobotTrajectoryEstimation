@@ -18,9 +18,9 @@ def get_positon_vectors(csv_file_name, time_between_samples):
             possition[0][i + 1] = velocity[0][i] * time_between_samples + possition[0][i]
         return possition
 
-    accelerations_init_x = df.iloc[:, 6:7].values.astype(np.float)
-    accelerations_init_y = df.iloc[:, 7:8].values.astype(np.float)
-    accelerations_init_z = df.iloc[:, 8:9].values.astype(np.float)
+    accelerations_init_x = df.iloc[:, 1:2].values.astype(np.float)
+    accelerations_init_y = df.iloc[:, 2:3].values.astype(np.float)
+    accelerations_init_z = df.iloc[:, 3:4].values.astype(np.float)
 
     accelerations_x = []
     accelerations_y = []
